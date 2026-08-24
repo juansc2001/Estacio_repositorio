@@ -14,7 +14,7 @@ body{
 }
 
 .cabeçalho{
-    position:fixed; 
+    position:relative; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,19 +23,20 @@ body{
 
     height: 200px;
     width: 100% ;
-    margin-bottom: 100px;
 }
 
 .corpo{
     position:relative;
-    top: 200px;
+    top: 50px;
     
-    height: 500px;
+    height: auto;
     width: 100%;
     border: solid;
 
     display: flex;
+    flex-wrap: wrap; /*pode quebrar os elementos para a proxima linha*/
     justify-content: center;   /* alinha no eixo principal (horizontal) */   
+    
 
     background-color: hsl(34, 57%, 70%);
     box-shadow: 0px 11px 15px 0px rgba(0, 0, 0, 0.20);
@@ -46,10 +47,20 @@ body{
 .rodape{
     position:fixed; 
     bottom: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
-    height: 100px;
+    height: 70px;
     width: 100% ;
     margin-top: 10px;
+
+    background-color: rgba(245, 245, 220, 0.651);
+
+    font-size: 30px;
+    
+}p{
+    color: rgb(32, 31, 31);
 }
 
 /*main*/
@@ -61,6 +72,7 @@ p {
     height: 350px;
     width: 350px;
     text-overflow: initial;
+    padding: 25px;
     margin: 50px;
     border: solid;
     box-shadow: 28px 12px 15px 0px rgba(0, 0, 0, 0.20);
