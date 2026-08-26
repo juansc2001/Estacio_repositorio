@@ -69,7 +69,7 @@ p {
 }
 
 .corpo div{
-    height: 350px;
+    height: auto;
     width: 350px;
     text-overflow: initial;
     padding: 25px;
