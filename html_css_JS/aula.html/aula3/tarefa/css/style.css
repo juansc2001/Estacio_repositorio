@@ -1,3 +1,62 @@
+body {
+    background-image: url("../img/background.jpeg");
+    background-size: cover;
+    background-position: top;
+    
+    min-height: 100vh; /* Garante que o elemento ocupe toda a altura da tela */
+
+}
+/*cor da fonte etc*/
+body h1{
+    color: aliceblue;
+    font-size: 30px;
+}
+body h2{
+    color: aliceblue;
+    font-size: 30px;
+}
+body p{
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/*cabeçalho*/
+header{
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-between;
+
+    height: 65px;
+    background-color: rgba(0, 0, 0, 0.5);
+} 
+
+header nav{
+    margin-right: 15px;
+
+} 
+header button{
+    height: 30px;
+    width: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+} span {
+  background-color: #333;
+  height: 4px;           
+  margin-bottom: 3px;
+  border-radius: 2px;     
+}
+
+header img{
+    
+    margin-left: 15px;
+    height: 20px;
+    width: auto;
+}
+
 main{
-    background-image:url("img/background.jpeg") ;
+    
+    
 }
