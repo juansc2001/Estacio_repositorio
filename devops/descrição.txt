@@ -1,0 +1,35 @@
+Desenhe um pipeline para uma loja virtual
+
+Do deploy manual mensal à entrega semanal confiável. Esta atividade coloca em prática
+os conceitos da aula: arquitetura de nuvem, fluxo CI/CD, controles de qualidade
+e segurança, e estratégias de rollback.
+
+
+Escolha o modelo de nuvem
+
+Defina se a loja usará nuvem pública, privada, híbrida ou multicloud. Justifique
+a escolha com base em requisitos de escala, custo e controle.
+
+
+Trace o fluxo commit → produção
+Descreva cada etapa do pipeline: versionamento, build, testes, análise de segurança,
+homologação e deploy. Identifique ferramentas e responsáveis
+
+
+
+
+
+Escolha o modelo de nuvem + tipo de serviço:
+
+    nuvem privada tipo de serviço PaaS e DBaaS para a hospedagem de
+    um servidor que vai aceitar as requisições e processar os dados
+    da loja virtual, assim como um banco de dados pronto para guardar
+    os dados da loja virtual
+
+
+aplicações utilizadas:
+    (hospedagem da render)Paas para hospedar o servidor focado em processar os dados
+    (SupaBase) como DBaas para a hospedagem e gerenciamento do banco de dados 
+
+
+
