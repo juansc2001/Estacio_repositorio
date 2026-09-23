@@ -3,18 +3,261 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>menu</title>
+
     <style>
-        body {
-        background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8kplJVgdXDAUqL5_u7uBja03CtUaKXYnLebh9XtM4KzCYOm08tLD5Vfn5&s=10");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position-x: 00px;
-        background-position-y: -200px;
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvo6L4Ztaz8RzLP00A0iuQOppyWfzTfsN_pPzaSsXUWbgXfdsdDQJRo8E&s=10a");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        h1{
+            margin-right: 30vw;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            color: antiquewhite;
+            
+        }
+        .lista{
+            list-style: none;
+            display: none;
+            position: relative;
+            right: 250px;
+            
+            
+
+            width: 300px;
+            height: 500px;
+            border: solid;
+        }
+
+        nav{
+            border: solid;
+            border-radius: 20px;
+            background-color: rgba(167, 31, 133, 0.397);
+            width: 99vw;
+            height: 10vw;
+
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            
+        }
+
+        .linha{
+            display: block;
+            width: 25px;
+            height: 3px;
+            background-color: #000000;
+        }
+        
+        .botaao{
+            width:50px;
+            height:50px;
+            margin: 20px;
+            background-image: url("https://static.vecteezy.com/system/resources/previews/014/177/839/non_2x/rounded-menu-button-free-png.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+
+
+            
+            box-shadow: 10px 5px 15px 0px rgba(0, 0, 0, 0.20);
+            border-radius: 8px;
+        }
+
+        .botaao:hover .lista{
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            background-color: rgba(68, 51, 223, 0.24);
+
+            
+        }
+
+        .lista li {
+
+            width: 17vw;
+            height: 25px;
+            
+            margin-top: 10px;
+            margin-right: 9px;
+            border: solid;
+
+            background-color: rgb(172, 166, 166);
+        }
+
+        .lista li a{
+            text-size-adjust: 30px;
+        }
+
+
+        .corpo{
+            height: 100vh;
+            width: 100vw;
+
+            
+
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        } .botao{
+            height: 200px;
+            width: 400px;
+            border-radius:50px;
+
+            background-image: url(https://thumbs.dreamstime.com/z/logotipo-do-elemento-sinal-%C3%ADcone-bot%C3%A3o-jogo-em-roxo-colorido-no-fundo-branco-134798022.jpg);
+            background-position: -120px -50px;
+            background-size:600px;
+            background-repeat: no-repeat;
+            
+        }
+        .jogo{
+            display: none;
+        }
+
+        .gato{
+            height: 150px;
+            width: 100px;
+        }
+
+        .jogao{
+            display: none ;
+            background-image: url("./css/hole.png");
+            background-position: cover;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 500px;
+            height: 500px;
+        }
+
+         /* Estilo base das imagens */
+        .gato {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            display: none; /* Começam escondidas */
+            transition: filter 0.2s ease; /* Transição suave para o efeito visual */
+            cursor: pointer;
+        }
+
+        /* Reação perceptível ao clicar (fica preto/escuro e congelado) */
+        .gato.clicado {
+            filter: brightness(0) saturate(0%); /* Fica totalmente preto */
+            pointer-events: none; /* Impede múltiplos cliques */
+        }
+
+        .lista{
+            
+        } li{
+            margin: 300px;
         }
     </style>
 </head>
 <body>
     
+    <nav>
+
+
+        <h1> jogo do martelo </h1>
+        
+        <button class="botaao">
+            
+            
+
+            <ul class="lista" >
+
+                <li>
+                    <a href="index.html">home</a>
+                </li>
+
+                <li>
+                    <a href="#">outro botao</a>
+                </li>
+
+                <li>
+                    <a href="nao_clica.html">nao-clica</a>
+                </li>
+            </ul>
+        </button>
+    </nav>
+
+
+    <main  class="corpo">
+        <button class="botao"> </button>
+
+        <div class="jogao" >
+            <img src="./css/gato.png" alt=""  class="" style="width: 100px; height: 100px; margin: 20px;">
+            <img src="./css/gato.png" alt=""  class="" style="width: 100px; height: 100px; margin: 20px;">
+            <img src="./css/gato.png" alt=""  class="" style="width: 100px; height: 100px; margin: 20px;">
+            <img src="./css/gato.png" alt=""  class="" style="width: 100px; height: 100px; margin: 20px;">
+            <img src="./css/gato.png" alt=""  class="" style="width: 100px; height: 100px; margin: 20px;">
+            <img src="./css/gato.png" alt=""  class="" style="width: 100px; height: 100px; margin: 20px;">
+            <img src="./css/gato.png" alt=""  class="" style="width: 100px; height: 100px; margin: 20px;">
+            <img src="./css/gato.png" alt=""  class="" style="width: 100px; height: 100px; margin: 20px;">
+            <img src="./css/gato.png" alt=""  class="" style="width: 100px; height: 100px; margin: 20px;">
+            <img src="./css/gato.png" alt=""  class="" style="width: 100px; height: 100px; margin: 20px;">
+            <img src="./css/gato.png" alt=""  class="" style="width: 100px; height: 100px; margin: 20px;">
+            <img src="./css/gato.png" alt=""  class="" style="width: 100px; height: 100px; margin: 20px;">
+            
+        </div>
+        <img src="./css/hole.png" alt="" class="jogo" style="width: 500px; height: 500px;">
+
+        
+    </main>
+    
+
+
+    <script>
+        
+        const botao = document.querySelector('.botao');
+        const imagem = document.querySelector('.jogao');
+
+        
+        botao.addEventListener('click', function() {
+            botao.style.display = 'none'; 
+            imagem.style.display = 'flex'; 
+            imagem.style.display = 'flex-wrap'; 
+            
+        });
+
+
+
+        const gatos = document.querySelectorAll('.gato');
+
+ 
+        function alternarGatos() {
+
+            gatos.forEach(gato => {
+                gato.style.display = 'none';
+                gato.classList.remove('clicado'); 
+            });
+
+            const indiceAleatorio = Math.floor(Math.random() * gatos.length);
+            const gatoSorteado = gatos[indiceAleatorio];
+
+          
+            gatoSorteado.style.display = 'inline-block';
+        }
+
+        setInterval(alternarGatos, 1500);
+
+        // Adiciona a reação de clique em cada um dos gatos
+        gatos.forEach(gato => {
+            gato.addEventListener('click', function() {
+                
+                gato.classList.add('clicado');
+                
+                
+                setTimeout(() => {
+                    gato.style.display = 'none';
+                }, 300);
+            });
+        });
+
+    </script>
 </body>
 </html>
