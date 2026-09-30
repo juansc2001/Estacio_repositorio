@@ -130,8 +130,14 @@
             background-position: cover;
             background-size: cover;
             background-repeat: no-repeat;
+
+
+
             width: 500px;
             height: 500px;
+            display: flex;
+            flex-wrap: wrap;
+            
         }
 
          /* Estilo base das imagens */
@@ -142,6 +148,7 @@
             display: none; /* Começam escondidas */
             transition: filter 0.2s ease; /* Transição suave para o efeito visual */
             cursor: pointer;
+            
         }
 
         /* Reação perceptível ao clicar (fica preto/escuro e congelado) */
@@ -154,6 +161,22 @@
             
         } li{
             margin: 300px;
+        }
+
+        .coluna-gato img{
+            width:100px; 
+            height:100px; 
+            margin: 25px;
+            display: flex;
+            
+        }
+        .coluna-gato{
+            width: 100%;
+            height:100px; 
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+
         }
     </style>
 </head>
@@ -190,18 +213,28 @@
         <button class="botao"> </button>
 
         <div class="jogao" >
-            <img src="./css/gato.png" alt=""  class="" style="width: 100px; height: 100px; margin: 20px;">
-            <img src="./css/gato.png" alt=""  class="" style="width: 100px; height: 100px; margin: 20px;">
-            <img src="./css/gato.png" alt=""  class="" style="width: 100px; height: 100px; margin: 20px;">
-            <img src="./css/gato.png" alt=""  class="" style="width: 100px; height: 100px; margin: 20px;">
-            <img src="./css/gato.png" alt=""  class="" style="width: 100px; height: 100px; margin: 20px;">
-            <img src="./css/gato.png" alt=""  class="" style="width: 100px; height: 100px; margin: 20px;">
-            <img src="./css/gato.png" alt=""  class="" style="width: 100px; height: 100px; margin: 20px;">
-            <img src="./css/gato.png" alt=""  class="" style="width: 100px; height: 100px; margin: 20px;">
-            <img src="./css/gato.png" alt=""  class="" style="width: 100px; height: 100px; margin: 20px;">
-            <img src="./css/gato.png" alt=""  class="" style="width: 100px; height: 100px; margin: 20px;">
-            <img src="./css/gato.png" alt=""  class="" style="width: 100px; height: 100px; margin: 20px;">
-            <img src="./css/gato.png" alt=""  class="" style="width: 100px; height: 100px; margin: 20px;">
+            
+            <div class="coluna-gato">
+                <img src="./css/gato.png" alt=""  >
+                <img src="./css/gato.png" alt=""   >
+                
+                
+            </div>
+
+            <div class="coluna-gato">
+                
+                <img src="./css/gato.png" alt=""    >
+                <img src="./css/gato.png" alt=""    >
+                
+            </div>
+
+            <div class="coluna-gato">
+                <img src="./css/gato.png" alt=""    >
+                <img src="./css/gato.png" alt=""    >
+                
+            </div>
+            
+            
             
         </div>
         <img src="./css/hole.png" alt="" class="jogo" style="width: 500px; height: 500px;">
