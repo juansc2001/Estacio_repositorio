@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        main{
+            width: 100vw;
+            height: 100vh;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .tabuleiro{
+            width: 50%;
+            height: 50%;
+
+            background-image: url("./img/tabuleiro.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 400px;
+        }
+
+        .peao{
+            width: 50px;
+
+            margin-left: 10px;
+            margin-right: 10px;
+
+             cursor: grab;
+        }
+    </style>
+</head>
+<body>
+    <main>
+
+        <div class="tabuleiro" >
+            <img src="./img/peao.png" alt="" class="peao" draggable="true">
+            <img src="./img/peao.png" alt="" class="peao" draggable="true">
+            <img src="./img/peao.png" alt="" class="peao" draggable="true">
+            <img src="./img/peao.png" alt="" class="peao" draggable="true">
+        </div>
+
+    </main>
+</body>
+</html>
