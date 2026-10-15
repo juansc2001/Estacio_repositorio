@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        #texto{
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <p id="texto" > esse texto é em caixa alta</p>
+    <button onclick="aumentafonte() ">
+        aumentar
+    </button>
+
+
+
+    <script>
+        function aumentafonte(){
+            let texto = document.getElementById("texto")
+            texto.style.fontSize = "62px"
+        }
+    </script>
+</body>
+</html>

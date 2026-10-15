@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #contador{
+            font-size: 40px;
+            color: #2563eb;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <p id="contador"> 0</p>
+    <button onclick="contarclique()"> contarclick </button>
+
+    <script>
+
+        let total = 0
+        
+        function contarclique(){
+            total = total + 1
+
+            const contador = document.getElementById('contador');
+            contador.textContent = total;
+        }
+    </script>
+</body>
+</html>

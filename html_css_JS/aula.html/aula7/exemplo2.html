@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        #menssagem{
+            color: #334155;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <p id="menssagem">texto original </p>
+    <button onclick="trocartexto()"> trocar texto</button>
+
+
+    <script>
+
+        function trocartexto(){
+            const texto = document.getElementById("menssagem");
+
+            texto.textContent  = "texto atualizado";
+        }
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        input{
+            padding: 10px;
+            border:1px solid green;
+        }
+
+    </style>
+</head>
+<body>
+    <input type="text" id="nome" placeholder="seu nome">
+    <button onclick="mostrarnome()"> mostrar nome</button>
+    <p id="resultado">seu nome vai aparecer aqui</p>
+
+
+
+    <script>
+
+        function mostrarnome(){
+            const nome = document.getElementById('nome');
+            const resultado = document.getElementById('resultado');
+
+            resultado.textContent = "olà"+ nome.value;
+
+        }
+    </script>
+</body>
+</html>

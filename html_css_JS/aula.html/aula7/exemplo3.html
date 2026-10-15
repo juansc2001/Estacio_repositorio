@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        #aviso{
+            color: 000000;
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+    <p id="aviso">aviso importante</p>
+    <button onclick="mudarcor()"> botao</button>
+
+
+
+    <script>
+
+        function mudarcor(){
+            const aviso =document.getElementById('aviso')
+            aviso.style.color='red'
+        }
+
+    </script>
+</body>
+</html>
