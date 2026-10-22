@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>   aaaaaaaaaaaaaaaaaaaaaaaaaaaa </title>
+
+
+    <style>
+        body {
+        font-family: Arial, sans-serif;
+        background: #eef2ff;
+        color: #172554;
+        margin: 0;
+        padding: 24px;
+        }
+
+
+        main {
+        max-width: 440px;
+        margin: 40px auto;
+        background: white;
+        padding: 24px;
+        border-radius: 16px;
+        }
+
+
+        input, select, button {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        margin-top: 12px;
+        padding: 12px;
+        font-size: 18px;
+        }
+
+
+
+        button {
+        background: #2563eb; color: white;
+        }
+
+
+        #resultado { font-weight: bold; }
+
+    </style>
+
+
+
+</head>
+<body>
+    <main>
+
+        <h1>Sua idade</h1>
+
+        <form onsubmit="verificar(); return false;">
+            <label for="entrada">
+                Idade em anos
+            </label>
+            <input id="entrada" type="number" min="0" step="1" required>
+            <button type="submit">Verificar</button>
+        </form>
+
+
+        <p id="resultado" aria-live="polite">
+            Aguardando informação.
+        </p>
+  </main>
+
+
+
+  <script >
+        function verificar() {
+        const idade = Number(
+            document.getElementById("entrada").value
+        );
+        const resultado = document.getElementById("resultado");
+        if (idade >= 18) {
+            resultado.textContent = "Menor de idade";
+        } else {
+            resultado.textContent = "Menor de idade";
+        }
+        }
+  </script>
+
+</body>
+</html>
