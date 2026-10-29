@@ -1,0 +1,66 @@
+
+    <style>
+        #form {
+        font-family: Arial, sans-serif;
+        background: #eef2ff;
+        color: #172554;
+        margin: 0;
+        padding: 24px;
+        }
+
+
+        #form2 {
+        max-width: 440px;
+        margin: 40px auto;
+        background: white;
+        padding: 24px;
+        border-radius: 16px;
+        }
+
+
+        #entrada, select, #bot {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        margin-top: 12px;
+        padding: 12px;
+        font-size: 18px;
+        }
+
+
+
+        #bot {
+        background: #2563eb; color: white;
+        }
+
+
+        #resultado { font-weight: bold; }
+
+    </style>
+
+
+
+</head>
+<div id="form">
+    <main id="form2">
+
+        <h1>Sua idade</h1>
+
+        <form onsubmit="verificar(); return false;">
+            <label for="entrada">
+                loguin
+            </label>
+            <input id="entrada" type="number" min="0" step="1" required>
+             <label for="entrada">
+                senha
+            </label>
+            <input id="entrada" type="number" min="0" step="1" required>
+            <button type="submit" id="bot">Verificar</button>
+        </form>
+
+
+        <p id="resultado" aria-live="polite">
+            Aguardando informação.
+        </p>
+  </main>
+</div>
