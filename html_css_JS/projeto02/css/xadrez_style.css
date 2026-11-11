@@ -10,6 +10,7 @@ main{
 .tabuleiro{
     width: 70%;
     height: 70%;
+    z-index: -100;
 
     background-image: url("../img/tabuleiro.png");
     background-position: center;
@@ -22,6 +23,22 @@ main{
 
     box-sizing: border-box;
     padding: 6.5% 9%;
+}
+
+.peaoo{
+    width: 3%;
+    height: 10.5%;
+
+    margin-left: 10px;
+    margin-right: 10px;
+    background-image: url(../img/Cartela\ de\ Peças\ de\ Xadrez\ Elegantes.png);
+    background-position: -210px -15px;
+    background-size: 250px;
+    background-repeat: no-repeat;
+    z-index: 100;
+
+    cursor: grab;
+
 }
 
 .peao{
