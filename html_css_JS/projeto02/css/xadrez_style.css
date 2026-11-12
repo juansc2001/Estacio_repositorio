@@ -8,11 +8,11 @@ main{
 }
 
 .tabuleiro{
-    width: 70%;
+    width: 40%;
     height: 70%;
-    z-index: -100;
+    
 
-    background-image: url("../img/tabuleiro.png");
+    /*background-image: url("../img/tabuleiro.png");*/
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -22,9 +22,13 @@ main{
     grid-template-rows: repeat(8, 1fr);
 
     box-sizing: border-box;
-    padding: 6.5% 9%;
+    
+
+
+    border:solid;
 }
 
+/*
 .peaoo{
     width: 3%;
     height: 10.5%;
@@ -39,13 +43,21 @@ main{
 
     cursor: grab;
 
-}
+}*/
 
 .peao{
-    width: 3.5%;
+    width: 50%;
 
     margin-left: 10px;
     margin-right: 10px;
 
         cursor: grab;
+}
+
+
+.preto{
+    background-color: black;
+}
+.branco{
+    background-color: antiquewhite;
 }
